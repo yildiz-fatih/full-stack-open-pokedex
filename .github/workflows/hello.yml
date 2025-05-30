@@ -6,8 +6,14 @@ on:
       - main
 
 jobs:
-    hello_world_job:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Say hello
-            run: echo "Hello, World!"
+  hello_world_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello, World!"
+
+      - name: Print the current date
+        run: date
+
+      - name: List current directory contents
+        run: ls -l
